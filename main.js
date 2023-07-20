@@ -56,6 +56,7 @@ function checkStatus(number, answer) {
    } 
     guessCount.textContent="No of guesses : " + currentGuessCount;
     guessedNumber.textContent="Guessed numbers" + guessedNumbers;
+    document.getElementById("userNumber").value="";
  }
 
 
@@ -89,10 +90,13 @@ let guessStart=() => {
 
             if(currentGuessCount===5){
                checkGame(userGuessNumber);  
+               
+
             }
 
             else{
                checkNumber(userGuessNumber);
+               
             }
          
    }
